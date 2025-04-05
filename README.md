@@ -1,80 +1,93 @@
-Wi-Fi Security Monitor
-Overview
-The Wi-Fi Security Monitor is an educational tool designed to assist network administrators in identifying potential deauthentication (deauth) attacks within a Wi-Fi network. By passively monitoring network traffic, it detects malicious deauthentication packets that may indicate unauthorized attempts to disrupt legitimate connections.
+# Wi-Fi Security Monitor  
 
-Features
-Deauthentication Attack Detection: Identifies and logs deauthentication packets in real-time.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-ESP32-important)
+![Purpose](https://img.shields.io/badge/Purpose-Education%20%26%20Security-yellowgreen)
 
-Alert System: Provides immediate notifications upon detecting suspicious activity.
+> **Educational tool for detecting Wi-Fi deauthentication attacks**  
 
-Logging & Analysis: Maintains records of detected events for further security analysis.
+<p align="center">
+  <img src="https://img.icons8.com/color/96/000000/wifi-lock.png" alt="Wi-Fi Security Icon"/>
+</p>
 
-Ethical Compliance: Strictly intended for authorized security testing and educational purposes.
+## 📖 Overview  
+A passive monitoring tool for network administrators to detect deauthentication attacks in Wi-Fi networks. Designed for **educational purposes** and **authorized security testing**.
 
-Legal Disclaimer
-This tool is exclusively intended for:
+## ✨ Features  
+| Feature | Description |
+|---------|-------------|
+| 🔍 Attack Detection | Identifies deauthentication packets in real-time |
+| 🚨 Alert System | Immediate notifications for suspicious activity |
+| 📊 Logging | Timestamped records of security events |
+| ⚖️ Ethical Design | Strictly for authorized educational use |
 
-Educational use in controlled environments.
+## ⚠️ Legal Disclaimer  
+> **Warning**  
+> This tool is **only** for:  
+> - Educational use in controlled environments  
+> - Security testing **with explicit network ownership/permission**  
+>  
+> ❗ Unauthorized use may violate laws like the **Computer Fraud and Abuse Act**  
 
-Security testing by authorized personnel on networks with explicit permission.
+## 🛠️ Hardware/Software Requirements  
+### Hardware  
+- ESP32 (or compatible Wi-Fi microcontroller)  
 
-Unauthorized use on networks not owned or permitted for testing is illegal and may result in legal consequences.
+### Software  
+- Arduino IDE ([Download](https://www.arduino.cc/en/software))  
+- ESP32 Board Package ([Install Guide](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html))  
+- Libraries:  
+  ```arduino
+  #include <WiFi.h>
+  #include <esp_wifi.h>
+🚀 Installation
+bash
+Copy
+# Clone repository (if applicable)
+git clone https://github.com/your-repo/wifi-security-monitor.git
+cd wifi-security-monitor
+Setup Arduino IDE
 
-Requirements
-Hardware
-ESP32 (or equivalent Wi-Fi-enabled microcontroller)
+Install ESP32 board support
 
-Software
-Arduino IDE with ESP32 board support
+Add required libraries
 
-Required Libraries:
+Upload to ESP32
 
-WiFi.h
-
-esp_wifi.h
-
-(Optional) Wireshark for packet analysis
-
-Installation
-Configure ESP32 in Arduino IDE
-
-Install the ESP32 board support package.
-
-Add necessary libraries (WiFi.h, esp_wifi.h).
-
-Upload the Firmware
-
-Compile and flash the detection script to the ESP32.
-
+arduino
+Copy
+void setup() {
+  Serial.begin(115200);
+  // Initialization code...
+}
 Monitor Output
 
-Open the Serial Monitor (baud rate: 115200) to observe detection logs.
+Serial Monitor at 115200 baud
 
-Usage
-Deploy the Device
+📝 Usage Example
+python
+Copy
+[2023-11-15 14:30:45] ALERT: Deauth packet detected
+Source MAC: AA:BB:CC:DD:EE:FF  
+Target MAC: 11:22:33:44:55:66  
+RSSI: -72dBm  
+🌟 Future Roadmap
+Push notifications via Telegram/Email
 
-Connect the ESP32 to the network being monitored.
+Automated MAC address whitelisting
 
-Initiate Monitoring
+Statistical anomaly detection
 
-The tool will passively scan for deauthentication packets.
+🤝 Contributing
+bash
+Copy
+# Standard contribution workflow
+1. Fork the project  
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit changes (`git commit -m 'Add amazing feature'`)  
+4. Push (`git push origin feature/AmazingFeature`)  
+5. Open a Pull Request  
+📜 License
+Distributed under the MIT License. See LICENSE for details.
 
-Review Alerts
-
-Detected threats will be logged with timestamps and source details.
-
-Future Enhancements
-Automated Notifications: Email/SMS alerts for remote monitoring.
-
-Firewall Integration: Automated blocking of suspicious devices.
-
-Advanced Detection: Machine learning for improved threat classification.
-
-Contribution
-Contributions to enhance detection accuracy or add defensive features are welcome. Submit issues or pull requests via the project repository.
-
-License
-This project is licensed under the MIT License. Usage must comply with all applicable laws and ethical guidelines.
-
-Note: This tool is for educational and authorized security testing only. Misuse is prohibited.
-
+<p align="center"> <em>⚠️ Use responsibly and only on networks you own/have permission to test</em> </p> ```
