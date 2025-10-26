@@ -1,4 +1,3 @@
-Okay about this final stealth deauth code:
 #include "WiFi.h"
 #include "esp_wifi.h"
 
