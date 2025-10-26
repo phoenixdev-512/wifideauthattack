@@ -89,9 +89,25 @@ Enter the number of the Wi-Fi network to attack:
 - [ ] Web-based configuration interface
 - [ ] Support for additional ESP32 variants
 
+## 📁 Project Structure
+
+```
+wifideauthattack/
+├── wifi_scanner212.ino    # Main Arduino sketch
+├── README.md              # Project documentation
+├── LICENSE                # MIT License with ethical addendum
+├── CONTRIBUTING.md        # Contribution guidelines
+├── CODE_OF_CONDUCT.md     # Community guidelines
+├── SECURITY.md            # Security policy and responsible disclosure
+├── CHANGELOG.md           # Version history and changes
+└── .gitignore            # Git ignore rules
+```
+
 ## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+
+Quick steps:
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -99,11 +115,20 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Please ensure your code follows the existing style and includes appropriate documentation.
+Please ensure your code follows the existing style and includes appropriate documentation. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## 📜 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) file for details.
+
+For security-related concerns, please review our [Security Policy](SECURITY.md).
+
+## 📚 Documentation
+
+- **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute to this project
+- **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community standards and expectations
+- **[Security Policy](SECURITY.md)** - Vulnerability reporting and ethical use guidelines
+- **[Changelog](CHANGELOG.md)** - Version history and notable changes
 
 ## 🔒 Security Notice
 
