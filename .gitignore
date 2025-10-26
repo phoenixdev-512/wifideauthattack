@@ -1,0 +1,44 @@
+# Arduino IDE
+*.o
+*.a
+*.s
+*.hex
+*.eep
+*.elf
+*.map
+*.sym
+*.lss
+
+# Build directories
+build/
+*.build/
+
+# IDE specific files
+.vscode/
+.vs/
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
