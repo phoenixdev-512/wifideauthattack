@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Informal comments and notes removed from code
 - Inconsistent code style normalized
 
-## [2.1.0] - 2024 (Previous Version)
+## [2.1.0] - 2024
 
 ### Added
 - Basic deauthentication attack functionality
