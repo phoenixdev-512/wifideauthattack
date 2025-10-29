@@ -33,7 +33,7 @@ void sendDeauth(uint8_t *targetMAC, uint8_t *apMAC) {
 
 // Function to scan available networks
 void scanNetworks() {
-  int n = WiFi.scanNetworks();
+  int n = WiFi.scanNetworks(); 
   Serial.println("\nNearby Wi-Fi Networks:");
   for (int i = 0; i < n; i++) {
     Serial.printf("[%d] SSID: %s | MAC: %s | Signal: %d dBm\n", 
